@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project UbiPosture</title>
+  </head>
+  <body style="margin: 20px;">
+    <div class="container mt-2">
+      <h1>
+        <p>Project Ubiquitous Computing - UbiPosture</p>
+      </h1>
+      <p>Aka Fadila - Oct 23, 2023</p>
+    </div>
+    <div class="container mt-4">
+        <h2>Intro</h2>
+        <ul>
+          <li>
+            Artikel ini membahas aplikasi inovatif yang bertujuan untuk
+            meningkatkan kualitas postur tubuh melalui pemanfaatan Internet of
+            Things (IoT).
+          </li>
+        </ul>
+        <h2>Latar Belakang</h2>
+        <p>
+          Dalam beberapa tahun terakhir, pertumbuhan Internet of Things (IoT)
+          yang semakin berkembang menunjukan kemajuan teknologi sensor,
+          komputasi awan, dan konektivitas dimana-mana [1]. Prinsipnya, setiap
+          perkembangan teknologi diarahkan untuk memberikan manfaat kepada
+          manusia, itulah sebabnya konsep IoT mengungkapkan potensi besar dari
+          jaringan dan perangkat elektronik yang terhubung dalam meningkatkan
+          kesehatan makhluk hidup [2].
+        </p>
+        <p>
+          Pada sebagian studi kasus kesehatan, banyak sistem IoT yang telah
+          diterapkan untuk memantau indikator vital. Berikut contohnya seperti
+          sistem monitoring detak jantung [3], monitoring tekanan darah [4], dan
+          kecepatan pernapasan [5]. Pemantauan indikator vital biasanya
+          menggunakan sensor pada gelang, smartwatch, atau pakaian yang
+          dikenakan sehingga memberikan umpan balik langsung mengenai kondisi
+          kesehatan baik untuk alasan kolektif data kesehatan maupun memicu
+          upaya intervensi tepat waktu jika terjadi kejadian mendadak (stroke,
+          serangan jantung, pingsan) [6][7].
+        </p>
+        <p>
+          Gangguan mengenai postur tubuh terutama yang berkaitan dengan tulang
+          belakang atau punggung telah menjadi masalah kesehatan yang umum di
+          masyarakat modern. Gaya hidup yang semakin pasif, pekerjaan banyak di
+          depan komputer dan smartphone, dan kurang tepatnya posisi duduk yang
+          menjadi kebiasaan mengakibatkan masalah pada postur tubuh yang menjadi
+          buruk [8][9]. Postur tubuh yang tidak benar menyebabkan berbagai
+          masalah kesehatan termasuk nyeri punggung, nyeri pinggang, gangguan
+          tulang belakang, dan bahkan masalah pernapasan [10].
+        </p>
+        <p>
+          Dalam proyek ubiquitous computing ini, sistem monitoring postur tubuh
+          termasuk ke dalam kategori sistem berbasis susunan sensor lengkungan.
+          Ini adalah sistem portabel berdasarkan derajat sensor lengkungan
+          tulang belakang untuk mendeteksi postur saat duduk yang
+          berkepanjangan. Sistem ini berbasis mikrokontroler dan perangkat lunak
+          berbasis android yang dapat dijalankan di smartphone. Dengan
+          mengimplementasikan sensor – sensor yang mampu mengolah data dan
+          menerapkan algoritma machine learning random forest [11], sehingga
+          aplikasi dapat memberikan umpan balik langsung kepada pengguna tentang
+          memahami perbaikan postur tubuh mereka dengan cara yang lebih efektif
+          dan efisien.
+        </p>
+        <ul>
+          <li>
+            [1] S. Madakam, R. Ramaswamy, and S. Tripathi, “Internet of Things
+            (IoT): A Literature Review,” Journal of Computer and Communications,
+            vol. 03, no. 05, pp. 164–173, 2015, doi: 10.4236/jcc.2015.35021.
+          </li>
+          <li>
+            [2] Islam, SM Riazul, et al. "The internet of things for health
+            care: a comprehensive survey." IEEE access 3 (2015): 678-708.
+          </li>
+          <li>
+            [3] Noor, Noorhayati Mohamed, et al. "IoT-Based Heart Monitoring
+            System Implementation and Analysis." 2022 IEEE International
+            Conference on Computing (ICOCO). IEEE, 2022.
+          </li>
+          <li>
+            [4] Scardulla, Francesco, Nicola Montinaro, and Leonardo D'Acquisto.
+            "Blood pressure acquisitions with a prototypal PPG-based device."
+            2022 IEEE International Workshop on Metrology for Industry 4.0 & IoT
+            (MetroInd4. 0&IoT). IEEE, 2022.
+          </li>
+          <li>
+            [5] Raiano, Luigi, et al. "Respiratory rate estimation during
+            walking/running activities using principal components estimated from
+            signals recorded by a smart garment embedding piezoresistive
+            sensors." 2021 IEEE International Workshop on Metrology for Industry
+            4.0 & IoT (MetroInd4. 0&IoT). IEEE, 2021.
+          </li>
+          <li>
+            [6] Selvaraj, Sureshkumar, and Suresh Sundaravaradhan. "Challenges
+            and opportunities in IoT healthcare systems: a systematic review."
+            SN Applied Sciences 2.1 (2020): 139.
+          </li>
+          <li>
+            [7] Ullo, Silvia Liberata, and Ganesh Ram Sinha. "Advances in smart
+            environment monitoring systems using IoT and sensors." Sensors 20.11
+            (2020): 3113.
+          </li>
+          <li>
+            [8] F. Luna-Perejón, J. M. Montes-Sánchez, L. Durán-López, A.
+            Vazquez-Baeza, I. Beasley-Bohórquez, and J. L. Sevillano-Ramos, “IoT
+            Device for Sitting Posture Classification Using Artificial Neural
+            Networks,” Electronics (Basel), vol. 10, no. 15, 2021, doi:
+            10.3390/electronics10151825.
+          </li>
+          <li>
+            [9] F. Tlili, R. Haddad, R. Bouallegue, and N. Mezghani, “A
+            Real-time Posture Monitoring System Towards Bad Posture Detection,”
+            Wirel Pers Commun, vol. 120, no. 2, pp. 1207–1227, 2021, doi:
+            10.1007/s11277-021-08511-2.
+          </li>
+          <li>
+            [10] G. Nagymáté, M. Takács, and R. M. Kiss, “Does bad posture
+            affect the standing balance?,” Cogent Med, vol. 5, no. 1, p.
+            1503778, Jan. 2018, doi: 10.1080/2331205X.2018.1503778.
+          </li>
+          <li>
+            [11] Y. Alsouda, S. Pllana, and A. Kurti, “IoT-Based Urban Noise
+            Identification Using Machine Learning: Performance of SVM, KNN,
+            Bagging, and Random Forest,” in Proceedings of the International
+            Conference on Omni-Layer Intelligent Systems, in COINS ’19. New
+            York, NY, USA: Association for Computing Machinery, 2019, pp. 62–67.
+            doi: 10.1145/3312614.3312631.
+          </li>
+        </ul>
+        <h2>Branding</h2>
+        <ul>
+          <li>Merk: <strong>UbiPosture</strong></li>
+          <li>
+            Inspirasi merk: Kata “Posture” mengacu pada postur tubuh yang
+            menjadi focus utama aplikasi. Sedangkan, nama “Ubi” diambil dari
+            Ubiquitous Computing yang berarti komputasi dimana-mana yang
+            ditawarkan teknologi IoT.
+          </li>
+          <li>Tagline: Healthcare Technology.</li>
+          <li>
+            Campaign: UbiPosture adalah kunci bagi kesehatan Anda untuk
+            mendapatkan postur tubuh yang sehat. Perangkat wearable UbiPosture
+            memantau postur tubuh dan memberikan peringatan saat Anda memerlukan
+            koreksi postur sehingga Anda akan selalu tahu kapan harus duduk
+            lebih lurus atau mengatur posisi tubuh Anda untuk kesehatan postur
+            yang lebih baik.
+          </li>
+          <li>
+            Target user:
+            <ul>
+              <li>Usia 8+</li>
+              <li>
+                Individu yang menghadapi masalah kesehatan terkait postur tubuh
+              </li>
+            </ul>
+          </li>
+          <li>
+            User experience theme:
+            <ul>
+              <li>
+                Mudah dikonfigurasi dan digunakan agar mudah diatur sesuai
+                kebutuhan individu
+              </li>
+              <li>
+                Terkoneksi dengan aplikasi mobile untuk memastikan bahwa
+                pengguna memiliki kendali penuh atas perangkat IoT UbiPosture.
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <h2>User Story</h2>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Sebagai</th>
+              <th>Saya ingin bisa</th>
+              <th>Sehingga</th>
+              <th>Prioritas</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Pengguna</td>
+              <td>Memantau postur tubuh secara real-time</td>
+              <td>
+                Dapat mengetahui perubahan dan koreksi yang diperlukan dalam
+                postur dengan cepat
+              </td>
+              <td>⭐⭐⭐⭐⭐</td>
+            </tr>
+            <tr>
+              <td>Pengguna</td>
+              <td>Menerima notifikasi saat postur tubuh buruk</td>
+              <td>Dapat mengambil tindakan koreksi postur</td>
+              <td>⭐⭐⭐⭐</td>
+            </tr>
+            <tr>
+              <td>Pengguna</td>
+              <td>Mengakses panduan latihan postur yang dipersonalisasi</td>
+              <td>
+                Dapat meningkatkan postur tubuh melalui Latihan yang sesuai
+                dengan kebutuhan
+              </td>
+              <td>⭐⭐⭐</td>
+            </tr>
+            <tr>
+              <td>Pengguna</td>
+              <td>Melacak perkembangan perbaikan postur tubuh</td>
+              <td>Dapat melihat sejauh mana kemajuan yang telah dicapai</td>
+              <td>⭐⭐⭐</td>
+            </tr>
+            <tr>
+              <td>Pengguna</td>
+              <td>
+                Terhubung dengan perangkat wearable yang mendukung postur tubuh
+              </td>
+              <td>
+                Dapat memantau postur tubuh secara real-time dengan perangkat
+                wearable
+              </td>
+              <td>⭐⭐⭐⭐⭐</td>
+            </tr>
+            <tr>
+              <td>Sistem Aplikasi</td>
+              <td>Membantu memberikan umpan balik berupa suara.</td>
+              <td>Pengguna bisa diberi peringatan Ketika postur tubuh buruk</td>
+              <td>⭐⭐⭐⭐⭐</td>
+            </tr>
+            <tr>
+              <td>Sistem Aplikasi</td>
+              <td>Memberikan rekomendasi tentang posisi tubuh yang benar</td>
+              <td>
+                Pengguna bisa mengoreksi postur tubuh saat berdiri atau duduk
+              </td>
+              <td>⭐⭐⭐⭐</td>
+            </tr>
+          </tbody>
+        </table>
+        <h2>Metode dan Algoritma</h2>
+        <p>
+          Pada tahap ini kita menjelaskan metode dan algoritma yang digunakan
+          pada setiap komponen teknologi UbiCom. Contoh:
+        </p>
+        <ul>
+          <li>
+            Sensor:
+            <ul>
+              <li>
+                Sensor Wearable: mengukur parameter postur tubuh seperti sudut,
+                posisi, dan perubahan postur
+              </li>
+              <li>
+                Body Posture Recognition: menggunakan algoritma machine learning
+                Random Forest untuk melatih dataset postur tubuh yang bervariasi
+              </li>
+            </ul>
+          </li>
+          <li>
+            Respon:
+            <ul>
+              <li>
+                Respon berupa suara yang diberikan kepada pengguna saat postur
+                tubuh perlu dikoreksi
+              </li>
+              <li>
+                Rekomendasi latihan postur tubuh spesifik terhadap pengguna
+              </li>
+            </ul>
+          </li>
+          <li>Pengembangan aplikasi mobile</li>
+          <li>Integrasi IoT</li>
+        </ul>
+        <h2>Struktur Data</h2>
+        <img src="./assets/Struktur Data IoT UbiPosture.drawio.png" alt="Struktur Data">
+        <h2>Arsitektur Sistem</h2>
+        <img src="./assets/Arsitektur Sistem IoT UbiPosture.drawio.png" alt="Arsitektur Sistem">
+        <h2>Deskripsi Teknologi</h2>
+        <ul>
+          <li>
+            Mesin komputasi
+            <ul>
+              <li>Microcontroller: Raspberry Pi. Raspberry Pi adalah sebuah mikrokontroler yang ringkas dan kuat yang dapat digunakan untuk mengelola pemrosesan data pada tingkat edge (pengolahan data di perangkat lokal pengguna). Ini digunakan untuk mengintegrasikan data dari perangkat IoT di rumah dan memberikan respons terhadap perubahan postur tubuh pengguna. Raspberry Pi adalah pilihan yang cocok karena kemampuannya yang tinggi dan ukurannya yang kompak.
+            </li>
+              <li>Database: MongoDB. MongoDB adalah basis data NoSQL yang fleksibel dan skemanya tidak membatasi jenis data yang dapat disimpan. Basis data ini digunakan untuk menyimpan data pengguna, data postur tubuh, dan rekomendasi latihan. MongoDB memungkinkan penyimpanan dan pencarian data yang efisien.
+            </li>
+              <li>Smartphone: Android. Aplikasi mobile untuk Android adalah salah satu platform utama yang digunakan untuk berkomunikasi dengan pengguna dan memantau postur tubuh mereka secara real-time. Android adalah sistem operasi ponsel yang umum digunakan, dan aplikasi ini dapat diunduh dari Google Play Store.
+            </li>
+            </ul>
+          </li>
+          <li>
+            Software development
+            <ul>
+              <li>Mobile Development: React Native. React Native adalah platform pengembangan mobile cross-platform yang memungkinkan pengembangan aplikasi mobile untuk Android dan iOS dengan menggunakan satu basis kode. Hal ini memungkinkan pengembangan aplikasi yang efisien dan hemat biaya, serta memungkinkan aplikasi berjalan pada berbagai perangkat.
+            </li>
+              <li>Backend Developer: FastAPI. FastAPI adalah kerangka kerja pengembangan backend yang berbasis Python. Ini digunakan untuk mengelola logika bisnis, komunikasi dengan database, dan menyediakan API untuk aplikasi mobile. FastAPI sangat efisien dan cocok untuk pengembangan RESTful API yang cepat.
+            </li>
+            </ul>
+          </li>
+          <li>
+            Sensor
+            <ul>
+              <li>Sensor Kelengkungan: Flex Sensor. Sensor kelengkungan, seperti Flex Sensor, digunakan untuk mengukur perubahan postur tubuh pengguna. Ini adalah sensor fleksibel yang dapat membentuk diri sesuai dengan posisi tubuh dan memberikan data penting yang diperlukan untuk pemantauan postur tubuh.
+            </li>
+            </ul>
+          </li>
+          <li>
+            Responder
+            <ul>
+              <li>Module Speaker. Modul speaker digunakan untuk memberikan suara kepada pengguna dalam hal koreksi postur tubuh. Ini memungkinkan pengguna mendengar pengingat panduan secara langsung melalui perangkat mereka.
+            </li>
+            </ul>
+          </li>
+        </ul>
+        <h2>User Experience (UX) Design</h2>
+        <a href="https://www.figma.com/file/qET4ZoK91PxxsqwsXts0T6/UbiPosture?type=design&node-id=0%3A1&mode=design&t=x8ot96xfc2U1AGqk-1">Link to Figma</a>
+      </div>
+    </div>
+  </body>
+</html>
